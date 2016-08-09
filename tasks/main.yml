@@ -1,0 +1,6 @@
+---
+# file: tasks/main.yml
+
+- include: vars.yml
+  tags:
+    - vars
