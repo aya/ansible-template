@@ -2,6 +2,6 @@
 # file: playbook.yml
 
 - hosts: all
-  tasks:
-    - include: tasks/main.yml
+  roles:
+    - .
 
