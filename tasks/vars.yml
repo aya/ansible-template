@@ -1,7 +1,7 @@
 ---
 # file: tasks/vars.yml
 
-- name: load per operating system variables
+- name: vars - load per operating system variables
   include_vars: "{{item}}"
   with_first_found:
     - files:
@@ -23,5 +23,5 @@
     - paths:
       - "vars/"
 
-- name: override variables
-  include_vars: "vars/main.yml"
+- name: vars - override with local variables
+  include_vars: "vars/local.yml"
